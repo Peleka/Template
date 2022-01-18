@@ -1,6 +1,6 @@
 import React from "react";
 import s from './Footer.module.scss'
-import classes from "../../App.module.css"
+import classes from "../../App.module.scss"
 import {FooterBlock1} from "./Block1/Block1";
 import {FooterBlock2} from "./Block2/Block2";
 import {FooterBlock3} from "./Block3/Block3";

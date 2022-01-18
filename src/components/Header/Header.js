@@ -1,5 +1,5 @@
 import React from "react";
-import classes from "../../App.module.css"
+import classes from "../../App.module.scss"
 import s from './Header.module.scss'
 import logo from '../../images/logo_black.png'
 

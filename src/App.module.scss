@@ -50,11 +50,22 @@ body {
 }
 
 .container {
-    width: 1046px;
+    width: 100%;
+    max-width: 1046px;
     box-sizing: content-box;
     padding: 0 15px;
     margin: 0 auto;
-    border: 1px solid yellow;
+    @media (max-width: 1200px) {
+        max-width: 992px;
+    }
+
+    @media (max-width: 992px) {
+        max-width: 768px;
+    }
+
+    @media (max-width: 768px) {
+        max-width: 646px;
+    }
 }
 
 .button {
@@ -69,8 +80,3 @@ body {
     letter-spacing: 1px;
     transition: all 0.3s ease 0s;
 }
-
-/*.App > div:nth-child(2n+3)*/
-/*{*/
-/*    background:#ffffff;*/
-/*}*/

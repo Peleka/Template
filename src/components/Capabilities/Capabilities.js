@@ -1,5 +1,5 @@
 import React from "react";
-import classes from "../../App.module.css"
+import classes from "../../App.module.scss"
 import s from './Capabilities.module.scss'
 import  icon1 from '../../images/icon_1.png'
 import  icon2 from '../../images/icon_2.png'

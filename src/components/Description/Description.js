@@ -1,6 +1,6 @@
 import React from "react";
 import s from './Description.module.scss'
-import classes from "../../App.module.css"
+import classes from "../../App.module.scss"
 
 
 export const Description = () => {
