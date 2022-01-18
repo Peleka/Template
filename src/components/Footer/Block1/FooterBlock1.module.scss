@@ -1,12 +1,17 @@
 .block {
   max-width: 250px;
   .title {
-
+    font-size: 16px;
+    line-height: 18px;
+    text-transform: uppercase;
   }
   .logo {
-
+    margin: 19px 0 15px 0;
   }
-  .text{}
+  .text{
+    font-size: 14px;
+    line-height: 19px;
+  }
 }
 
 

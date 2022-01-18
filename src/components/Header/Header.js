@@ -1,7 +1,7 @@
 import React from "react";
 import classes from "../../App.module.css"
 import s from './Header.module.scss'
-import logo from '../../images/projeco-logo_black.png'
+import logo from '../../images/logo_black.png'
 
 export const Header = () => {
     return (

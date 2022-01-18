@@ -1,6 +1,6 @@
 import React from "react";
 import s from "./FooterBlock1.module.scss";
-import logo from "../../../images/projeco-logo.png";
+import logo from "../../../images/logo.png";
 
 export const FooterBlock1 = () => {
     return (

@@ -1,29 +1,27 @@
 .blockLinks {
-  border: 1px solid blue;
-  max-width: 262px;
+  max-width: 266px;
 
   .title {
+    font-size: 16px;
+    line-height: 18px;
+    text-transform: uppercase;
   }
 
   .links {
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    max-height: 150px;
-  }
-
-  .link {
-    font-size: 11px;
+    display: grid;
+    grid-template-columns: 105px 70px 85px;
+    gap: 40px;
+    font-size: 14px;
     line-height: 25px;
+    letter-spacing: 0.85px;
     text-transform: uppercase;
 
-    .linkContact {
-      margin-right: 34px;
-    }
+    .linksUl {
+      margin: 10px 0 0 0;
 
-  }
-  .linkCareers {
-    margin: 0 38px 50px 0;
+      .link a {
+        color: #fff;
+      }
+    }
   }
 }

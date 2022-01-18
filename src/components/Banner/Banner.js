@@ -1,7 +1,7 @@
 import React from "react";
 import s from './Banner.module.scss'
 import '../../App.module.css'
-import logo from '../../images/projeco-logo.png'
+import logo from '../../images/logo.png'
 
 export const Banner = () => {
     return (

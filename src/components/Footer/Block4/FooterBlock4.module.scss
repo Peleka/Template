@@ -1,5 +1,9 @@
 .block {
-border: 1px solid blue;
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+
+  & img:not(:last-child) {
+    margin: 0 24px 0 0;
+  }
 }
-
-

@@ -1,14 +1,27 @@
 .block {
- border: 1px solid blue;
- max-width: 140px;
- font-size: 11px;
- line-height: 16px;
- .title{
-  text-transform: uppercase;
- }
-  .address{}
-  .phone{}
-  .email{}
+  max-width: 140px;
+  font-size: 14px;
+  line-height: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  .title {
+    font-size: 16px;
+    line-height: 18px;
+    text-transform: uppercase;
+  }
+
+  & > a {
+    color: #fff;
+  }
+
+  .address {
+  }
+
+  .phone {
+  }
+
+  .email {
+  }
 }
-
-
