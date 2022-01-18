@@ -1,0 +1,14 @@
+.block {
+ border: 1px solid blue;
+ max-width: 140px;
+ font-size: 11px;
+ line-height: 16px;
+ .title{
+  text-transform: uppercase;
+ }
+  .address{}
+  .phone{}
+  .email{}
+}
+
+

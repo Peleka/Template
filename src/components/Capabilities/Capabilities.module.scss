@@ -1,0 +1,49 @@
+.section_abilities {
+  margin: 115px 0;
+}
+.capabilities {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .cap_title{
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 21px;
+    letter-spacing: 2.3px;
+    padding: 0 150px 0 0;
+  }
+  .cap_text {
+    font-size: 11px;
+    line-height: 19px;
+    max-width: 405px;
+  }
+}
+
+.list{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 80px;
+
+  .item{
+    box-sizing: border-box;
+    max-width: 295px;
+    max-height: 330px;
+    padding: 38px 23px;
+    border: 1px solid #E6E6E6;
+
+    .itemIcon{}
+    .itemTitle{
+      font-size: 16px;
+      line-height: 24px;
+      font-weight: 600;
+      letter-spacing: 0;
+      margin: 25px 0 13px 0;
+    }
+    .itemText{
+      font-size: 13px;
+      line-height: 23px;
+    }
+  }
+}

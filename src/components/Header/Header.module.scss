@@ -1,0 +1,34 @@
+.header {
+  display: flex;
+  min-height: 65px;
+  align-items: center;
+  justify-content: space-between;
+
+  .menu {
+
+    .list {
+      display: flex;
+      text-transform: uppercase;
+      color: #48555B;
+      font-size: 12px;
+      letter-spacing: 1px;
+
+      .item {
+        &:not(:last-child){
+          margin: 0 40px 0 0;
+        }
+
+        .link {
+          color: #737373;
+          font-weight: 600;
+          line-height: calc(24 / 14 * 100%);
+        }
+
+      }
+    }
+  }
+
+  .logo {
+
+  }
+}

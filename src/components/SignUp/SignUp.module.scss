@@ -1,0 +1,38 @@
+.background {
+  min-height: 100px;
+  background: #171819;
+  padding: 30px;
+}
+
+.login {
+  display: flex;
+  background: #171819;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+
+  .text {
+    font-weight: 700;
+    color: #fff;
+    line-height: 26px;
+    letter-spacing: 0.8px;
+    padding-right: 70px;
+  }
+  .field {
+    display: flex;
+    width: 400px;
+    justify-content: space-between;
+
+    .email {
+      border: 1px solid #737373;
+      border-right: none;
+      color: #48555B;
+      padding: 11px 0 11px 16px;
+      width: 259px;
+    }
+
+    .button {
+      padding: 11px 48px;
+    }
+  }
+}
