@@ -1,32 +1,16 @@
-import React from "react";
+import React, {useState} from "react";
 import classes from "../../App.module.scss"
-import s from './Header.module.scss'
+import sc from './Header.module.scss'
 import logo from '../../images/logo_black.png'
+import {Navigation} from "./Navigation/Navigation";
 
 export const Header = () => {
+    const [collapsed, setCollapsed] = useState(true)
     return (
         <div className={classes.container}>
-            <div className={s.header}>
+            <div className={`${sc.header} ${!collapsed && sc.menu_collapsed}`}>
                 <img src={logo} alt="logo"/>
-                <nav className={s.menu}>
-                    <ul className={s.list}>
-                        <li className={s.item}>
-                            <a href="" className={s.link}>Home</a>
-                        </li>
-                        <li className={s.item}>
-                            <a href="" className={s.link}>About</a>
-                        </li>
-                        <li className={s.item}>
-                            <a href="" className={s.link}>Services</a>
-                        </li>
-                        <li className={s.item}>
-                            <a href="" className={s.link}>Work</a>
-                        </li>
-                        <li className={s.item}>
-                            <a href="" className={s.link}>Contact</a>
-                        </li>
-                    </ul>
-                </nav>
+                <Navigation collapsed={collapsed} setCollapsed={setCollapsed} />
             </div>
         </div>
     )

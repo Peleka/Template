@@ -24,14 +24,14 @@ export const Description = () => {
                     </div>
                     <div className={s.imagesBlock}>
                         <div className={s.innerImage}>
-                            <div className={s.description1}>
-                                <p>We plan   </p>
+                            <div className={`${s.description} ${s.description1}`}>
+                                <span className={s.text}>We plan   </span>
                             </div>
-                            <div className={s.description2}>
-                                <p>We manage</p>
+                            <div className={`${s.description} ${s.description2}`}>
+                                <span  className={s.text}>We manage</span>
                             </div>
-                            <div className={s.description3}>
-                                <p>We build</p>
+                            <div className={`${s.description} ${s.description3}`}>
+                                <span className={s.text}>We build</span>
                             </div>
                         </div>
                     </div>
