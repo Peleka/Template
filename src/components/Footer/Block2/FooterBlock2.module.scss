@@ -1,5 +1,9 @@
 .blockLinks {
-  max-width: 266px;
+  min-width: 325px;
+  @media (max-width: 768px) {
+    min-width: 410px;
+  }
+
 
   .title {
     font-size: 16px;
@@ -8,9 +12,9 @@
   }
 
   .links {
-    display: grid;
-    grid-template-columns: 105px 70px 85px;
-    gap: 40px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
     font-size: 14px;
     line-height: 25px;
     letter-spacing: 0.85px;

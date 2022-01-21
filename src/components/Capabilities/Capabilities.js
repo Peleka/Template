@@ -10,10 +10,12 @@ export const Capabilities = () => {
         <div className={s.section_abilities}>
             <div className={classes.container}>
                 <div className={s.capabilities}>
-                    <h1 className={s.cap_title}>Our capabilities</h1>
-                    <p className={s.cap_text}>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut
-                        laoreet dolore magna aliquam erat.</p>
-                    <button className={classes.button}>All services</button>
+                    <h1 className={s.title}>Our capabilities</h1>
+                    <div className={s.content}>
+                        <p className={s.text}>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut
+                            laoreet dolore magna aliquam erat.</p>
+                        <button className={classes.button}>All services</button>
+                    </div>
                 </div>
                 <ul className={s.list}>
                     <li className={s.item}>
