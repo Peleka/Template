@@ -7,7 +7,7 @@ export const Description = () => {
     return (
         <div className={classes.container}>
             <div className={s.description}>
-                <h1 className={s.title}>Our story</h1>
+                <h1 className={classes.title}>Our story</h1>
                 <div className={s.innerBlock}>
                     <div className={s.textBlock}>
                         <h2 className={s.textBlock_title}>Founded in 2011 by John Mathew Smith, Konstruct has become the

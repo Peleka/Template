@@ -10,7 +10,7 @@ export const Capabilities = () => {
         <div className={s.section_abilities}>
             <div className={classes.container}>
                 <div className={s.capabilities}>
-                    <h1 className={s.title}>Our capabilities</h1>
+                    <h1 className={classes.title}>Our capabilities</h1>
                     <div className={s.content}>
                         <p className={s.text}>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut
                             laoreet dolore magna aliquam erat.</p>
