@@ -7,9 +7,15 @@ import twitter from '../../../images/google.svg'
 export const FooterBlock4 = () => {
     return (
         <div className={s.block}>
-            <img src={facebook} alt=""/>
-            <img src={google} alt=""/>
-            <img src={twitter} alt=""/>
+            <a className={s.link} href={''}>
+                <img src={facebook} alt=""/>
+            </a>
+            <a className={s.link} href={''}>
+                <img src={google} alt=""/>
+            </a>
+            <a className={s.link} href={''}>
+                <img src={twitter} alt=""/>
+            </a>
         </div>
     )
 }

@@ -1,9 +1,11 @@
+.block_header {
+  margin: 25px 0 30px 0;
+}
 .header {
   display: flex;
   min-height: 65px;
-  align-items: center;
+  align-items: start;
   justify-content: space-between;
-  margin-bottom: 58px;
 
   .menu {
     display: flex;
