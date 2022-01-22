@@ -6,7 +6,7 @@ import {FooterBlock2} from "./Block2/Block2";
 import {FooterBlock3} from "./Block3/Block3";
 import {FooterBlock4} from "./Block4/Block4";
 
-export const Footer = () => {
+export const Footer = ({ref1}) => {
     return (
         <footer className={s.footer}>
             <div className={classes.container}>
@@ -17,8 +17,8 @@ export const Footer = () => {
                   <FooterBlock4/>
                 </div>
             </div>
-            <div className={s.footerRest}>
-                <div className={classes.container}>
+            <div className={s.footerRest} ref={ref1}>
+                <div className={classes.container} >
                     <p> © 2017 Konstruct Inc. Designed by Jane Kathryn Teo</p>
                 </div>
             </div>

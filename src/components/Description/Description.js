@@ -28,7 +28,7 @@ export const Description = () => {
                                 <span className={s.text}>We plan   </span>
                             </div>
                             <div className={`${s.description} ${s.description2}`}>
-                                <span  className={s.text}>We manage</span>
+                                <span className={s.text}>We manage</span>
                             </div>
                             <div className={`${s.description} ${s.description3}`}>
                                 <span className={s.text}>We build</span>
@@ -38,5 +38,5 @@ export const Description = () => {
                 </div>
             </div>
         </div>
-)
+    )
 }

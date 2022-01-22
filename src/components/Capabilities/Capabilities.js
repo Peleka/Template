@@ -42,6 +42,5 @@ export const Capabilities = () => {
                 </ul>
             </div>
         </div>
-
     )
 }

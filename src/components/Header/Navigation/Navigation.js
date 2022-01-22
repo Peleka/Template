@@ -6,11 +6,11 @@ import sc from '../Header.module.scss'
 
 export const Navigation = ({collapsed, setCollapsed}) => {
     const navLinks = [
-        {id: v1(), title: "HOME", href: "#HOME", status: true},
-        {id: v1(), title: "ABOUT", href: "#ABOUT", status: false},
-        {id: v1(), title: "SERVICES", href: "#SERVICES", status: false},
-        {id: v1(), title: "WORK", href: "#WORK", status: false},
-        {id: v1(), title: "CONTACTS", href: "#CONTACTS", status: false},
+        {id: v1(), title: "HOME", href: "#HOME"},
+        {id: v1(), title: "ABOUT", href: "#ABOUT"},
+        {id: v1(), title: "SERVICES", href: "#SERVICES"},
+        {id: v1(), title: "WORK", href: "#WORK"},
+        {id: v1(), title: "CONTACTS", href: "#CONTACTS"},
     ]
     const navItems = navLinks.map(link =>
         <li key={link.id} className={s.item}>
@@ -20,8 +20,8 @@ export const Navigation = ({collapsed, setCollapsed}) => {
 
     const collapsedMenuHandler = () => {
         setCollapsed(!collapsed)
-        console.log("work")
     }
+
     return (
         <nav className={sc.menu}>
             <ul className={sc.list}>
