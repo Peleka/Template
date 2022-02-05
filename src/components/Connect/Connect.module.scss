@@ -1,22 +1,21 @@
-.connectBlock {
+.connect {
+  display: flex;
+  align-items: center;
+  min-height: 457px;
   text-align: center;
   background-image: url("image/bg.jpg");
   background-repeat: no-repeat;
   background-size: 100% 100%;
   background-position: bottom;
-  min-height: 457px;
+
   @media (max-width: 1440px) {
     background-size: cover;
   }
 
-  .innerBlock {
-    padding: 115px 0 0 0;
-
-    .text {
-      font-size: 30px;
-      line-height: 36px;
-      font-weight: 800;
-      margin: 0 0 35px;
-    }
+  &__text {
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: 800;
+    margin: 0 0 35px;
   }
 }

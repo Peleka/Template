@@ -10,7 +10,7 @@ function App() {
 
     const onScrollDown = () => {
         debugger
-        scrollRef.current.scrollIntoView({behavior: 'smooth'})
+        scrollRef.current.scrollIntoView({behavior: 'smooth', block: "end", inline: 'nearest'})
     }
 
     return (

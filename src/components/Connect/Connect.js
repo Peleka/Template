@@ -1,16 +1,13 @@
 import React from "react";
-import s from './Connect.module.scss'
-import classes from "../../App.module.scss"
-
+import moduleClasses from "./Connect.module.scss"
+import globalClasses from "../../App.module.scss"
 
 export const Connect = () => {
     return (
-        <div className={s.connectBlock}>
-            <div className={classes.container}>
-                <div className={s.innerBlock}>
-                    <h1 className={s.text}>Want to build something amazing?</h1>
-                    <button className={classes.button}>Get in touch</button>
-                </div>
+        <div className={moduleClasses["connect"]}>
+            <div className={globalClasses["container"]}>
+                <h1 className={moduleClasses["connect__text"]}>Want to build something amazing?</h1>
+                <button className={globalClasses["button"]}>Get in touch</button>
             </div>
         </div>
     )
