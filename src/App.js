@@ -1,5 +1,4 @@
-import React, {useEffect, useRef} from "react";
-import classes from "./App.module.scss"
+import React, {useRef} from "react";
 import {Banner} from "./components/Banner/Banner";
 import {Footer} from "./components/Footer/Footer";
 import {Header} from "./components/Header/Header";
@@ -9,15 +8,12 @@ function App() {
     const scrollRef = useRef(null)
 
     const onScrollDown = () => {
-        debugger
         scrollRef.current.scrollIntoView({behavior: 'smooth', block: "end", inline: 'nearest'})
     }
 
     return (
-        <div className={classes.wrapper}>
-            <Banner
-                onScrollDown={onScrollDown}
-            />
+        <div>
+            <Banner onScrollDown={onScrollDown} />
             <Header/>
             <Main/>
             <div ref={scrollRef}>
