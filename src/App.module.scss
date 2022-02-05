@@ -55,6 +55,7 @@ body {
     box-sizing: content-box;
     padding: 0 15px;
     margin: 0 auto;
+    text-align: center;
     @media (max-width: 1200px) {
         max-width: 992px;
     }
@@ -106,9 +107,10 @@ body {
         left: 0;
         background-color: #00A4E5;
     }
-}
-
-.stripe:before{
-    left: 50%;
-    transform: translate(-50%,50%);
+    &--stripe{
+        &:before{
+            left: 50%;
+            transform: translate(-50%,50%);
+        }
+    }
 }

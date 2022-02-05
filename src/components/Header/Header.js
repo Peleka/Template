@@ -6,6 +6,7 @@ import {Navigation} from "./Navigation/Navigation";
 
 export const Header = () => {
     const [collapsed, setCollapsed] = useState(true)
+
     return (
         <div className={sc.block_header}>
             <div className={classes.container}>
