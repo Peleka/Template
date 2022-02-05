@@ -11,7 +11,10 @@ import {Picture} from "./Picture/Picture";
 export const About = () => {
     return (
         <div className={globalClasses["container"]}>
-            <Title title={"Our story"}/>
+            <Title
+                modifier={"title--stripe"}
+                title={"Our story"}
+            />
             <div className={moduleClasses["sectionAbout"]}>
                 <div className={moduleClasses["sectionAbout__description"]}>
                     <h2 className={moduleClasses["sectionAbout__title"]}>Founded in 2011 by John Mathew Smith, Konstruct

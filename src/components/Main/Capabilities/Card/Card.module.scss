@@ -1,0 +1,29 @@
+.card {
+  height: 345px;
+  padding: 20px;
+  border: 1px solid #E6E6E6;
+  overflow: auto;
+
+  &:not(:last-child) {
+    margin: 0 15px 0 0;
+    @media (max-width: 820px) {
+      margin: 0 0 15px 0;
+    }
+  }
+  @media (max-width: 820px) {
+    height: auto;
+  }
+
+  &__title {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 600;
+    letter-spacing: 0;
+    margin: 25px 0 13px 0;
+  }
+
+  &__text {
+    font-size: 13px;
+    line-height: 23px;
+  }
+}
