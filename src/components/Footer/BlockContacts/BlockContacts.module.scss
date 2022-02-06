@@ -1,4 +1,4 @@
-.block {
+.contacts {
   max-width: 140px;
   font-size: 14px;
   line-height: 16px;
@@ -10,7 +10,7 @@
     margin-top: 15px;
   }
 
-  .title {
+  &__title {
     font-size: 16px;
     line-height: 18px;
     text-transform: uppercase;
@@ -19,17 +19,7 @@
     }
   }
 
-  & > a {
-    color: #fff;
-  }
-
-  .address {
+  &__address {
     padding: 10px 0;
-  }
-
-  .phone {
-  }
-
-  .email {
   }
 }

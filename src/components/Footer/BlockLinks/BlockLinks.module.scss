@@ -1,4 +1,4 @@
-.block {
+.socialLinks {
   display: flex;
   align-items: start;
   justify-content: space-between;
@@ -6,11 +6,11 @@
     margin-top: 15px;
   }
 
-  .link {
+  &__link {
     cursor: pointer;
-  }
 
-  .link:not(:last-child) {
-    margin: 0 24px 0 0;
+    &:not(:last-child) {
+      margin: 0 24px 0 0;
+    }
   }
 }

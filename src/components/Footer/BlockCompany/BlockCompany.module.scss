@@ -2,21 +2,23 @@
   max-width: 250px;
   @media (max-width: 768px) {
     max-width: 410px;
-    margin:  0  0 20px 0;
+    margin: 0 0 20px 0;
     display: flex;
     flex-direction: column;
     align-items: inherit;
   }
 
-  .title {
+  &__title {
     font-size: 16px;
     line-height: 18px;
     text-transform: uppercase;
   }
-  .logo {
+
+  &__logo {
     margin: 19px 0 15px 0;
   }
-  .text{
+
+  &__text {
     font-size: 14px;
     line-height: 19px;
   }
