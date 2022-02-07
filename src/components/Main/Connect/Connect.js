@@ -1,7 +1,7 @@
 import React from "react";
 import moduleClasses from "./Connect.module.scss"
 import globalClasses from "../../../App.module.scss"
-import {Button} from "../../../common/components/Button/Button";
+import {Button} from "../../../global/Button/Button";
 
 export const Connect = () => {
     return (

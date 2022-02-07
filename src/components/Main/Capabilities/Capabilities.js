@@ -1,13 +1,13 @@
 import React from "react";
 import globalClasses from "../../../App.module.scss"
 import moduleClasses from './Capabilities.module.scss'
-import icon1 from '../../../images/icon_1.png'
+import icon1 from './images/icon_1.png'
 import icon2 from '../../../images/icon_2.png'
 import icon3 from '../../../images/icon_3.png'
 import {Card} from "./Card/Card";
-import {Title} from "../../../common/components/Title/Title";
-import {Button} from "../../../common/components/Button/Button";
 import {v1} from "uuid";
+import {Button} from "../../../global/Button/Button";
+import {Title} from "../../../global/Title/Title";
 
 export const Capabilities = () => {
     const text = "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat"

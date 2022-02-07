@@ -9,7 +9,7 @@ export const Header = () => {
     return (
         <header className={moduleClasses["header"]}>
             <div className={globalClasses["container"]}>
-                <div className={`${moduleClasses["header__wrapper"]}`}>
+                <div className={moduleClasses["header__wrapper"]}>
                     <img src={logo} alt={"logo"}/>
                     <Navigation collapsed={collapsed} setCollapsed={setCollapsed}/>
                 </div>
