@@ -23,12 +23,11 @@ export const BlockMenu = () => {
     ]
 
     const listLinks = (links) => {
-        const items = links.map((link) =>
+        return  links.map((link) =>
             <li className={moduleClasses["menu__link"]} key={link.id}>
                 <a href={link.href}>{link.title}</a>
             </li>
         )
-        return items
     }
 
     return (
