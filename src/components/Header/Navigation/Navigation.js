@@ -1,8 +1,6 @@
 import React from "react";
-import s from './Navigation.module.scss'
+import moduleClasses from './Navigation.module.scss'
 import {v1} from "uuid";
-import sc from '../Header.module.scss'
-
 
 export const Navigation = ({collapsed, setCollapsed}) => {
     const navLinks = [
@@ -13,8 +11,8 @@ export const Navigation = ({collapsed, setCollapsed}) => {
         {id: v1(), title: "CONTACTS", href: "#CONTACTS"},
     ]
     const navItems = navLinks.map(link =>
-        <li key={link.id} className={s.item}>
-            <a className={s.link} href={link.href}>{link.title}</a>
+        <li key={link.id} className={moduleClasses["navigation__item"]}>
+            <a className={moduleClasses["navigation__link"]} href={link.href}>{link.title}</a>
         </li>
     )
 
@@ -23,11 +21,11 @@ export const Navigation = ({collapsed, setCollapsed}) => {
     }
 
     return (
-        <nav className={sc.menu}>
-            <ul className={sc.list}>
+        <nav className={moduleClasses["navigation"]}>
+            <ul className={`${moduleClasses["navigation__list"]}  ${!collapsed && moduleClasses["navigation__collapsed"]}`}>
                 {navItems}
             </ul>
-            <div className={s.menuBurger} onClick={collapsedMenuHandler}>
+            <div className={moduleClasses["navigation__menuBurger"]} onClick={collapsedMenuHandler}>
                 <span></span>
             </div>
         </nav>
