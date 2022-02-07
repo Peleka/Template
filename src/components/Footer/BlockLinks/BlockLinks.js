@@ -6,8 +6,8 @@ import twitter from '../../../images/google.svg'
 
 export const BlockLinks = () => {
     const socialLinks = [facebook, google, twitter]
-    const links = socialLinks.map(link =>
-        <a className={moduleClasses["socialLinks__link"]} href={''}>
+    const links = socialLinks.map((link, index) =>
+        <a className={moduleClasses["socialLinks__link"]} href={''} key={index}>
             <img src={link} alt=""/>
         </a>
     )

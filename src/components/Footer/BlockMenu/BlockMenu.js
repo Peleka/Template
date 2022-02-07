@@ -1,41 +1,48 @@
 import React from "react";
 import moduleClasses from "./BlockMenu.module.scss";
+import {v1} from "uuid";
 
 
 export const BlockMenu = () => {
-    const navLinks1 = ["Home", "About", "Services", "Projects", "Contacts Us"]
-    const navLinks2 = ["FAQ", "Terms", "Careers"]
-    const navLinks3 = ["Blog", "Partners", "News"]
+    const navLinks1 = [
+        {id: v1(), title: "HOME", href: "#HOME"},
+        {id: v1(), title: "ABOUT", href: "#ABOUT"},
+        {id: v1(), title: "SERVICES", href: "#SERVICES"},
+        {id: v1(), title: "WORK", href: "#WORK"},
+        {id: v1(), title: "CONTACTS", href: "#CONTACTS"},
+    ]
+    const navLinks2 = [
+        {id: v1(), title: "FAQ", href: "#FAQ"},
+        {id: v1(), title: "Terms", href: "#Terms"},
+        {id: v1(), title: "Careers", href: "#Careers"},
+    ]
+    const navLinks3 = [
+        {id: v1(), title: "Blog", href: "#Blog"},
+        {id: v1(), title: "Partners", href: "#Partners"},
+        {id: v1(), title: "News", href: "#News"},
+    ]
 
-
-    const listLinks1 = navLinks1.map((link, index) =>
-        <li className={moduleClasses["menu__link"]} key={index}>
-            <a href={""}>{link}</a>
-        </li>
-    )
-    const listLinks2 = navLinks2.map((link, index) =>
-        <li className={moduleClasses["menu__link"]} key={index}>
-            <a href={""}>{link}</a>
-        </li>
-    )
-    const listLinks3 = navLinks3.map((link, index) =>
-        <li className={moduleClasses["menu__link"]} key={index}>
-            <a href={""}>{link}</a>
-        </li>
-    )
+    const listLinks = (links) => {
+        const items = links.map((link) =>
+            <li className={moduleClasses["menu__link"]} key={link.id}>
+                <a href={link.href}>{link.title}</a>
+            </li>
+        )
+        return items
+    }
 
     return (
         <div className={moduleClasses["menu"]}>
             <p className={moduleClasses["menu__title"]}>Links</p>
             <div className={moduleClasses["menu__links"]}>
                 <ul className={moduleClasses["menu__list"]}>
-                    {listLinks1}
+                    {listLinks(navLinks1)}
                 </ul>
                 <ul className={moduleClasses["menu__list"]}>
-                    {listLinks2}
+                    {listLinks(navLinks2)}
                 </ul>
                 <ul className={moduleClasses["menu__list"]}>
-                    {listLinks3}
+                    {listLinks(navLinks3)}
                 </ul>
             </div>
         </div>
