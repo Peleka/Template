@@ -1,10 +1,10 @@
 import React from "react";
-import globalClasses from "../../../App.module.scss"
+import moduleClasses from "./Button.module.scss"
 
 export const Button = ({textButton}) => {
     return (
         <>
-            <button className={globalClasses["button"]}>
+            <button className={moduleClasses["button"]}>
                 {textButton}
             </button>
         </>
