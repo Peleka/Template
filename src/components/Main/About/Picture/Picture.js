@@ -1,5 +1,5 @@
 import React from "react";
-import moduleClasses from "./Picture.module.scss"
+import moduleClasses from "./Picture.module.scss";
 
 export const Picture = ({text, picture}) => {
     return (

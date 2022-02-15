@@ -50,7 +50,6 @@ body {
     padding: 0 15px;
     margin: 0 auto;
     text-align: center;
-    border: 1px solid red;
 
     @media (max-width: 1248px) {
         max-width: 960px;
@@ -61,6 +60,6 @@ body {
     }
 
     @media (max-width: 767px) {
-        max-width: 320px;
+        max-width: 276px;
     }
 }
