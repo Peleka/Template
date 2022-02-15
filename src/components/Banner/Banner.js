@@ -1,14 +1,9 @@
 import React from "react";
-import moduleClasses from './Banner.module.scss'
-import globalClasses from "../../App.module.scss"
-import logo from '../../images/logo.png'
+import moduleClasses from "./Banner.module.scss";
+import globalClasses from "../../App.module.scss";
+import logo from "./image/logo.png";
 
-export const Banner = (props) => {
-
-    const onScroll = () => {
-        props.onScrollDown()
-    }
-
+export const Banner = () => {
     return (
         <div className={moduleClasses["banner"]}>
             <div className={globalClasses["container"]}>
@@ -19,7 +14,7 @@ export const Banner = (props) => {
                         <p className={moduleClasses["banner__text"]}>An award-winning construction management firm</p>
                     </div>
                     <div className={moduleClasses["banner__scroll"]}>
-                        <a href={''} onClick={onScroll}>Scroll down</a>
+                        <a href={'#footer'}>Scroll down</a>
                     </div>
                 </div>
             </div>

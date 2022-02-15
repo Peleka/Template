@@ -1,7 +1,7 @@
 import React from "react";
-import globalClasses from "../../../App.module.scss"
-import moduleClasses from "./Registration.module.scss"
-import {Button} from "../../../global/Button/Button";
+import globalClasses from "../../../App.module.scss";
+import moduleClasses from "./Registration.module.scss";
+import {Button} from "../../Global/Button/Button";
 
 export const Registration= () => {
     return (

@@ -1,20 +1,34 @@
 import React from "react";
-import globalClasses from "../../../App.module.scss"
-import moduleClasses from './Capabilities.module.scss'
-import icon1 from './images/icon_1.png'
-import icon2 from '../../../images/icon_2.png'
-import icon3 from '../../../images/icon_3.png'
+import globalClasses from "../../../App.module.scss";
+import moduleClasses from "./Capabilities.module.scss";
+import icon1 from "./images/icon_1.png";
+import icon2 from "./images/icon_2.png";
+import icon3 from "./images/icon_3.png";
 import {Card} from "./Card/Card";
 import {v1} from "uuid";
-import {Button} from "../../../global/Button/Button";
-import {Title} from "../../../global/Title/Title";
+import {Title} from "../../Global/Title/Title";
+import {Button} from "../../Global/Button/Button";
 
 export const Capabilities = () => {
-    const text = "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat"
     const cardsList = [
-        {id: v1(), icon: icon1, title: "PROJECT AND CONSTRUCTION MANAGEMENT", text: text},
-        {id: v1(), icon: icon2, title: "STRUCTURE AUDIT AND MAINTENANCE", text: text},
-        {id: v1(), icon: icon3, title: "FACTORY CONSTRUCTION AND MODELING", text: text},
+        {
+            id: v1(),
+            icon: icon1,
+            title: "PROJECT AND CONSTRUCTION MANAGEMENT",
+            text: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat"
+        },
+        {
+            id: v1(),
+            icon: icon2,
+            title: "STRUCTURE AUDIT AND MAINTENANCE",
+            text: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat"
+        },
+        {
+            id: v1(),
+            icon: icon3,
+            title: "FACTORY CONSTRUCTION AND MODELING",
+            text: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat"
+        },
     ]
 
     const cards = cardsList.map(card =>
@@ -27,20 +41,20 @@ export const Capabilities = () => {
     )
 
     return (
-        <div className={moduleClasses["sectionAbilities"]}>
+        <div className={moduleClasses["abilities"]}>
             <div className={globalClasses["container"]}>
-                <div className={moduleClasses["sectionAbilities__flex"]}>
+                <div className={moduleClasses["abilities__wrapper"]}>
                     <Title
                         modifier={""}
                         title={"Our capabilities"}/>
-                    <div className={moduleClasses["sectionAbilities__content"]}>
-                        <p className={moduleClasses["sectionAbilities__text"]}>Lorem ipsum dolor sit amet, consectetuer
+                    <div className={moduleClasses["abilities__content"]}>
+                        <p className={moduleClasses["abilities__text"]}>Lorem ipsum dolor sit amet, consectetuer
                             adipiscing elit, sed diam nonummy nibh euismod tincidunt ut
                             laoreet dolore magna aliquam erat.</p>
                         <Button textButton={"All services"}/>
                     </div>
                 </div>
-                <ul className={moduleClasses["sectionAbilities__list"]}>
+                <ul className={moduleClasses["abilities__list"]}>
                     {cards}
                 </ul>
             </div>

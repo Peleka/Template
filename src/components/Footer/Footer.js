@@ -6,19 +6,19 @@ import {BlockCompany} from "./BlockCompany/BlockCompany";
 import {BlockMenu} from "./BlockMenu/BlockMenu";
 import {BlockContacts} from "./BlockContacts/BlockContacts";
 
-export const Footer = ({ref1}) => {
+export const Footer = () => {
     return (
-        <footer className={moduleClasses["footer"]}>
+        <footer className={moduleClasses["footer"]} id={"footer"}>
             <div className={globalClasses["container"]}>
                 <div className={moduleClasses["footer__info"]}>
-                  <BlockCompany/>
-                  <BlockMenu/>
-                  <BlockContacts/>
-                  <BlockLinks/>
+                    <BlockCompany/>
+                    <BlockMenu/>
+                    <BlockContacts/>
+                    <BlockLinks/>
                 </div>
             </div>
-            <div className={moduleClasses["footer__rest"]} ref={ref1}>
-                <div className={globalClasses["container"]} >
+            <div className={moduleClasses["footer__rest"]}>
+                <div className={globalClasses["container"]}>
                     <p> © 2017 Konstruct Inc. Designed by Jane Kathryn Teo</p>
                 </div>
             </div>

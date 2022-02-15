@@ -3,6 +3,7 @@
   flex-direction: column-reverse;
   justify-content: end;
   align-items: center;
+
   @media (max-width: 767px) {
     align-items: end;
   }
@@ -22,6 +23,7 @@
   &__item {
     &:not(:last-child) {
       margin: 0 40px 0 0;
+
       @media (max-width: 767px) {
         margin: 0;
       }
