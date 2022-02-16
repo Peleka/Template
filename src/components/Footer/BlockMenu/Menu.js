@@ -1,9 +1,9 @@
 import React from "react";
-import moduleClasses from "./BlockMenu.module.scss";
+import moduleClasses from "./Menu.module.scss";
 import {v1} from "uuid";
 
 
-export const BlockMenu = () => {
+export const Menu = () => {
     const navLinks1 = [
         {id: v1(), title: "HOME", href: "#HOME"},
         {id: v1(), title: "ABOUT", href: "#ABOUT"},
@@ -23,8 +23,8 @@ export const BlockMenu = () => {
     ]
 
     const listLinks = (links) => {
-        return  links.map((link) =>
-            <li className={moduleClasses["menu__link"]} key={link.id}>
+        return links.map((link) =>
+            <li key={link.id}>
                 <a href={link.href}>{link.title}</a>
             </li>
         )

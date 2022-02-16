@@ -15,10 +15,12 @@
     left: 0;
     background-color: #00A4E5;
   }
-  &--stripe{
-    &:before{
+
+  &--stripe {
+
+    &:before {
       left: 50%;
-      transform: translate(-50%,50%);
+      transform: translate(-50%, 50%);
     }
   }
 }

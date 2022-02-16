@@ -10,6 +10,7 @@ export const Navigation = ({collapsed, setCollapsed}) => {
         {id: v1(), title: "WORK", href: "#work"},
         {id: v1(), title: "CONTACTS", href: "#contacts"},
     ]
+
     const navItems = navLinks.map(link =>
         <li key={link.id} className={moduleClasses["navigation__item"]}>
             <a className={moduleClasses["navigation__link"]} href={link.href}>{link.title}</a>

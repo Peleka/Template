@@ -1,7 +1,7 @@
 import React from "react";
-import moduleClasses from "./BlockContacts.module.scss";
+import moduleClasses from "./Contacts.module.scss";
 
-export const BlockContacts = () => {
+export const Contacts = () => {
     return (
         <div className={moduleClasses["contacts"]}>
             <p className={moduleClasses["contacts__title"]}>Contact us</p>

@@ -2,7 +2,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 58px 0;
+  margin-top: 58px;
+  margin-bottom: 100px;
 
   @media (max-width: 959px) {
     flex-direction: column;
@@ -11,28 +12,20 @@
   &__description {
     max-width: 405px;
     text-align: start;
-
-    @media (max-width: 959px) {
-      margin: 0 0 15px 0;
-    }
   }
 
   &__text {
-    letter-spacing: 0;
     font-size: 13px;
-    line-height: 24px;
+    line-height: 1.8;
     color: #48555B;
+    margin-bottom: 15px;
   }
 
   &__title {
     font-size: 20px;
-    line-height: 24px;
+    line-height: 1.2;
     font-weight: 600;
-    margin: 0 0 30px 0;
-
-    @media (max-width: 959px) {
-      margin: 0 0 20px 0;
-    }
+    margin-bottom: 20px;
   }
 
   &__images {

@@ -1,18 +1,18 @@
 import React from "react";
-import moduleClasses from "./BlockLinks.module.scss";
+import moduleClasses from "./SocialLinks.module.scss";
 import facebook from '../../../images/facebook.svg'
 import google from '../../../images/twitter.svg'
 import twitter from '../../../images/google.svg'
 
-export const BlockLinks = () => {
+export const SocialLinks = () => {
     const socialLinks = [facebook, google, twitter]
     const links = socialLinks.map((link, index) =>
-        <a className={moduleClasses["socialLinks__link"]} href={''} key={index}>
+        <a href={''} key={index}>
             <img src={link} alt=""/>
         </a>
     )
     return (
-        <div className={moduleClasses["socialLinks"]}>
+        <div className={moduleClasses["icons"]}>
             {links}
         </div>
     )

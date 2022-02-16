@@ -41,23 +41,21 @@ export const Capabilities = () => {
     )
 
     return (
-        <div className={moduleClasses["abilities"]}>
-            <div className={globalClasses["container"]}>
-                <div className={moduleClasses["abilities__wrapper"]}>
-                    <Title
-                        modifier={""}
-                        title={"Our capabilities"}/>
-                    <div className={moduleClasses["abilities__content"]}>
-                        <p className={moduleClasses["abilities__text"]}>Lorem ipsum dolor sit amet, consectetuer
-                            adipiscing elit, sed diam nonummy nibh euismod tincidunt ut
-                            laoreet dolore magna aliquam erat.</p>
-                        <Button textButton={"All services"}/>
-                    </div>
+        <div className={globalClasses["container"]}>
+            <div className={moduleClasses["abilities"]}>
+                <Title
+                    modifier={""}
+                    title={"Our capabilities"}/>
+                <div className={moduleClasses["abilities__content"]}>
+                    <p className={moduleClasses["abilities__text"]}>Lorem ipsum dolor sit amet, consectetuer
+                        adipiscing elit, sed diam nonummy nibh euismod tincidunt ut
+                        laoreet dolore magna aliquam erat.</p>
+                    <Button textButton={"All services"}/>
                 </div>
-                <ul className={moduleClasses["abilities__list"]}>
-                    {cards}
-                </ul>
             </div>
+            <ul className={`${moduleClasses["abilities"]} ${moduleClasses["abilities--margin"]}`}>
+                {cards}
+            </ul>
         </div>
     )
 }

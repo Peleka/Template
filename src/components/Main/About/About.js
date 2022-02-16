@@ -1,9 +1,9 @@
 import React from "react";
-import moduleClasses from './About.module.scss'
-import globalClasses from "../../../App.module.scss"
-import picture1 from "../../../images/description1.jpg"
-import picture2 from "../../../images/description2.jpg"
-import picture3 from "../../../images/description3.jpg"
+import moduleClasses from "./About.module.scss";
+import globalClasses from "../../../App.module.scss";
+import picture1 from "../../../images/description1.jpg";
+import picture2 from "../../../images/description2.jpg";
+import picture3 from "../../../images/description3.jpg";
 import {Picture} from "./Picture/Picture";
 import {Title} from "../../Global/Title/Title";
 
