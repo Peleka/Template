@@ -1,8 +1,13 @@
-import React from "react";
-import moduleClasses from './Navigation.module.scss'
+import React, {useState} from "react";
+import moduleClasses from './Navigation.module.scss';
+import {faBars, faWindowClose} from "@fortawesome/free-solid-svg-icons";
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {v1} from "uuid";
 
-export const Navigation = ({collapsed, setCollapsed}) => {
+
+export const Navigation = () => {
+    const [menuActive, setMenuActive] = useState(false)
+
     const navLinks = [
         {id: v1(), title: "HOME", href: "#home"},
         {id: v1(), title: "ABOUT", href: "#about"},
@@ -17,18 +22,18 @@ export const Navigation = ({collapsed, setCollapsed}) => {
         </li>
     )
 
-    const collapsedMenuHandler = () => {
-        setCollapsed(!collapsed)
-    }
-
     return (
         <nav className={moduleClasses["navigation"]}>
-            <ul className={`${moduleClasses["navigation__list"]}  ${!collapsed && moduleClasses["navigation__collapsed"]}`}>
+            <div className={moduleClasses["navigation__menuBurger"]} onClick={() => setMenuActive(!menuActive)}>
+                {
+                    !menuActive
+                        ? <FontAwesomeIcon icon={faBars}/>
+                        : <FontAwesomeIcon icon={faWindowClose}/>
+                }
+            </div>
+            <ul className={`${moduleClasses["navigation__list"]}  ${menuActive && moduleClasses["navigation__collapsed"]}`}>
                 {navItems}
             </ul>
-            <div className={moduleClasses["navigation__menuBurger"]} onClick={collapsedMenuHandler}>
-                <span></span>
-            </div>
         </nav>
     )
 }
