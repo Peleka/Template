@@ -48,6 +48,15 @@ body {
   color: #252b42;
   font-weight: 500;
   font-family: "Open Sans";
+
+  &::-webkit-scrollbar {
+    width: 5px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: linear-gradient(270deg, #141A20 0%, rgba(0, 164, 229, 1) 100%);
+    margin: 0;
+  }
 }
 
 .container {
