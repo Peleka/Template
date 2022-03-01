@@ -41,7 +41,7 @@ export const Capabilities = () => {
     )
 
     return (
-        <div className={globalClasses["container"]}>
+        <div className={globalClasses["container"]} id={"services"}>
             <div className={moduleClasses["abilities"]}>
                 <Title
                     modifier={""}

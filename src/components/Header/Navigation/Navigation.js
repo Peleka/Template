@@ -17,23 +17,30 @@ export const Navigation = () => {
     ]
 
     const navItems = navLinks.map(link =>
-        <li key={link.id} className={moduleClasses["navigation__item"]}>
-            <a className={moduleClasses["navigation__link"]} href={link.href}>{link.title}</a>
+        <li key={link.id}>
+            <a onClick={() => setMenuActive(!menuActive)}
+               className={moduleClasses["navigation__link"]} href={link.href}>{link.title}</a>
         </li>
     )
 
     return (
         <nav className={moduleClasses["navigation"]}>
             <div className={moduleClasses["navigation__menuBurger"]} onClick={() => setMenuActive(!menuActive)}>
-                {
-                    !menuActive
-                        ? <FontAwesomeIcon icon={faBars}/>
-                        : <FontAwesomeIcon icon={faWindowClose}/>
-                }
+                <FontAwesomeIcon icon={faBars}/>
             </div>
-            <ul className={`${moduleClasses["navigation__list"]}  ${menuActive && moduleClasses["navigation__collapsed"]}`}>
+            <ul className={`${moduleClasses["navigation__list"]}`}>
                 {navItems}
             </ul>
+            {menuActive &&
+            <div className={moduleClasses["navigation__collapsed"]}>
+                <div className={moduleClasses["navigation__close"]} onClick={() => setMenuActive(!menuActive)}>
+                    <FontAwesomeIcon icon={faWindowClose}/>
+                </div>
+                <ul>
+                    {navItems}
+                </ul>
+            </div>
+            }
         </nav>
     )
 }

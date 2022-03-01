@@ -7,7 +7,7 @@ import {Navigation} from "./Navigation/Navigation";
 export const Header = () => {
 
     return (
-        <div className={globalClasses["container"]}>
+        <div className={globalClasses["container"]} id={"home"}>
             <header className={moduleClasses["header"]}>
                 <img src={logo} alt={"logo"}/>
                 <Navigation/>

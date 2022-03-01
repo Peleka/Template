@@ -9,7 +9,7 @@ import {Title} from "../../Global/Title/Title";
 
 export const About = () => {
     return (
-        <div className={globalClasses["container"]}>
+        <div className={globalClasses["container"]} id={"about"}>
             <Title
                 modifier={"title--stripe"}
                 title={"Our story"}

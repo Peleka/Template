@@ -5,7 +5,7 @@ import {Button} from "../../Global/Button/Button";
 
 export const Registration = () => {
     return (
-        <div className={moduleClasses["registration"]}>
+        <div className={moduleClasses["registration"]} id={"contacts"}>
             <div className={globalClasses["container"]}>
                 <div className={moduleClasses["registration__form"]}>
                     <h1 className={moduleClasses["registration__text"]}>Newsletter Signup</h1>

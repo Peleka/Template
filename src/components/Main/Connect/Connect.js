@@ -6,7 +6,7 @@ import {Button} from "../../Global/Button/Button";
 
 export const Connect = () => {
     return (
-        <div className={moduleClasses["connect"]}>
+        <div className={moduleClasses["connect"]} id={"work"}>
             <div className={globalClasses["container"]}>
                 <h1 className={moduleClasses["connect__text"]}>Want to build something amazing?</h1>
                 <Button textButton={"Get in touch"}/>
