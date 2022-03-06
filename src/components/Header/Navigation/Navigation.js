@@ -18,7 +18,7 @@ export const Navigation = () => {
 
     const navItems = navLinks.map(link =>
         <li key={link.id}>
-            <a onClick={() => setMenuActive(!menuActive)}
+            <a
                className={moduleClasses["navigation__link"]} href={link.href}>{link.title}</a>
         </li>
     )
@@ -36,7 +36,7 @@ export const Navigation = () => {
                 <div className={moduleClasses["navigation__close"]} onClick={() => setMenuActive(!menuActive)}>
                     <FontAwesomeIcon icon={faWindowClose}/>
                 </div>
-                <ul>
+                <ul onClick={() => setMenuActive(!menuActive)}>
                     {navItems}
                 </ul>
             </div>
